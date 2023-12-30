@@ -6,7 +6,7 @@
 \usepackage{setspace}
 \usepackage{geometry}
 \usepackage{float}
-\usepackage{hyperref}
+\usepackage[colorlinks]{hyperref}
 \usepackage[utf8]{inputenc}
 \usepackage[polish]{babel}
 \usepackage{framed}
@@ -85,21 +85,14 @@
 
 % ------------------------------------------------------------------------------
 
-\section{Interpolujące funkcje sklejane stopnia k}
-\label{sekcja1:wstęp}
-Poniższa praca będzie miała na celu przybliżenie zagadnienia interpolujących funkcji 
-sklejanych stopnia k. W pierwszej sekcji - \nameref{sekcja2:definicja} przedstawiona zostanie formalna definicja ww. funkcji wraz z jej postacią macierzową (\nameref
-\section{Definicja}
-\label{sekcja2:definicja}
-\subsection{Postać macierzowa}
-\label{sekcja2.1:postac_macierzowa}
+\input{sections/01_wstep.tex}
+\input{sections/02_definicja.tex}
+
 \subsection{Brakujące równania}
 \subsubsection{not-a-knot}
 \subsubsection{natural}
 \subsubsection{periodic}
 
-
-\cite{kincaid_cheney}
 
 \section{Własności numeryczne}
 \textbf{\textcolor{red}{Ignorujcie na razie to co tutaj będę wrzucać. Na razie nie wiem co się dzieję, więc pojawi się tutaj wszystko i będzie to przeze mnie ciągle poprawiane, aż w końcu będzie tak jak powinno!}}
@@ -119,7 +112,7 @@ K=$max_{0\leq j \leq n-1} \frac{\parallel \bigtriangleup \parallel}{\mid x_{j+1}
 $M_4=max_{0\leq j \leq n-1}\mid f^{(IV)}(x)\mid$.
 
  To jest link potrzebny mi chyba
- https://eia.pg.edu.pl/documents/184139/40421150/TI_LAB_5_Material_pomocniczy_b.pdf
+% https://eia.pg.edu.pl/documents/184139/40421150/TI_LAB_5_Material_pomocniczy_b.pdf
  
 
 
@@ -140,7 +133,7 @@ https://wazniak.mimuw.edu.pl/index.php?title=MN09
 Błąd oscylacji: Innym problemem związanym z interpolacją funkcjami sklejanymi sześciennymi jest błąd oscylacji. Błąd ten występuje, gdy interpolowana funkcja ma duże zmiany w krótkim przedziale, co prowadzi do oscylacji funkcji sklejanej.
 \begin{figure}
     \centering
-    \includegraphics[width=0.5\linewidth]{image.png}
+    \includegraphics[width=0.5\linewidth]{assets/image.png}
     \caption{Enter Caption}
     \label{fig:enter-label}
 \end{figure}
@@ -200,7 +193,7 @@ def arctan(x,n=10):
 
 \begin{figure}[htbp]
     \center
-    \includegraphics[width=1.0\textwidth]{plots_wide.png}
+    \includegraphics[width=1.0\textwidth]{assets/plots_wide.png}
     \caption{Porównanie wykresu oryginalnej funkcji $sin(xcos(x))^2$ z wykresem funkcji interpolowanej dla 5, 10 i 30 równoodległych węzłów. Ponadto narysowane są wykresy dla 1. i 2. pochodnej funkcji interpolowanej; dla 2. pochodnej widoczne są nieróżniczkowalne "załamania" funkcji.}
 \end{figure}
 
@@ -212,7 +205,7 @@ def arctan(x,n=10):
 % ------------------------------------------------------------------------------
 
 \bibliographystyle{apalike}
-\bibliography{References.bib}
+\bibliography{References}
 
 
 \begin{itemize}
