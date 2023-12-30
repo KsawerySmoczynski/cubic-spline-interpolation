@@ -6,7 +6,7 @@
 \usepackage{setspace}
 \usepackage{geometry}
 \usepackage{float}
-\usepackage[colorlinks]{hyperref}
+\usepackage{hyperref}
 \usepackage[utf8]{inputenc}
 \usepackage[polish]{babel}
 \usepackage{framed}
@@ -80,13 +80,20 @@
 \maketitle
 \newpage
 
+{\hypersetup{colorlinks=false}
+% or \hypersetup{linkcolor=black}, if the colorlinks=true option of hyperref is used
 \tableofcontents
+}
 \newpage
 
 % ------------------------------------------------------------------------------
-
+{\hypersetup{
+    colorlinks = true,
+    allcolors = magenta
+    }
 \input{sections/01_wstep.tex}
 \input{sections/02_definicja.tex}
+}
 
 \subsection{Brakujące równania}
 \subsubsection{not-a-knot}

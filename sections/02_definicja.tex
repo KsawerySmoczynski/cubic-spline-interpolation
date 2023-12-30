@@ -1,6 +1,37 @@
 \section{Definicja}
 \label{sekcja2:definicja}
+W pierwszej kolejności zdefiniujmy funkcje sklejane stopnia k, jako
+ generalizację funkcji sklejanych stopnia trzeciego. 
+ Następnie uszczegółowimy konstrukcję funkcji sklejanych stopnia
+  trzeciego i opiszemy ich własności. 
+  W następnej kolejności przedstawimy postać macierzową 
+  ww. funkcji by ostatecznie przedstawić twierdzenie z 
+  którego wnioskujemy o tym, że są to najgładsze funkcje interpolujące.
+
+\subsection{Definicja funkcji sklejanych stopnia $k$}
+\label{subsekcja2:definicja}
+Zdefniujmy $\Pi_k$ jako wielomian stopnia $k$, gdzie $k \in \mathbb{Z_+}$.
+Niech będzie dana funkcja $S$ określona na pewnym 
+przedziale $(a,b)\in\mathbb{R}$, ustalmy $n+1$ węzłów $T = \{t_i \in (a,b), i \in \{0, 1, 2, \dots, n\}: t_1 < ... < t_{i-1} < t_{i} < t_{i+1} < t_{n+1}\}$.
+Wówczas dla każdej liczby $k \in \mathbb{Z_+}$ funkcją sklejaną 
+stopnia $k$ nazywamy taką funkcję $S$, która spełnia 
+następujące warunki:
+\begin{enumerate}
+    \item Dla każdego przedziału $[t_i, t_{i+1})$, gdzie $i \in \{0, 1, 2, \dots, n-1\}$ funkcja $S$ jest wielomianem $\Pi_k$ stopnia $k$.
+    \item Funkcja $S$ na przedziale $[t_0, t_n]$ ma ciągłą $(k-1)$-szą pochodną.
+\end{enumerate}
+
+\subsection{Opis i własności funkcji sklejanych stopnia trzeciego (sześciennych)}
+\label{subsekcja2:opis_i_wlasnosci_fss3}
+Niech dane będą węzły $t_i$ oraz odpowiadające im 
+wartości $y_i$, gdzie $i \in \{0, 1, 2, \dots, n\}$. 
+Zdefiniujmy, funkcję $S$ która dla każdego węzła $t_i$ przyjmuje 
+wartość $y_i$ \big($\forall_{i\in\{0,1,2,\dots,n\}} \space S(t_i) = y_i$\big)
+oraz która dla każdego z przedziałów $[t_i, t_{i+1})$ jest wielomianem $S_i$ stopnia trzeciego $\Pi_3$.
+Aby funkcja S była funkcją sklejaną trzeciego stopnia musi spełniać warunki zdefiniowane w poprzedniej subsekcji (\nameref{subsekcja2:definicja}).
+
+
 \subsection{Postać macierzowa}
-\label{sekcja2.1:postac_macierzowa}
+\label{subsekcja2:postac_macierzowa}
 \subsection{Gładkość sześciennych funkcji sklejanych}
-\label{sekcja2.2:gladkosc}
+\label{subsekcja2:gladkosc}
